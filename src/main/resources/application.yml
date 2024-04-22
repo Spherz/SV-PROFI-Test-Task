@@ -8,6 +8,9 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+  sql:
+    init:
+      mode: always
 springdoc:
   swagger-ui:
     path: /swagger-ui/index.html
