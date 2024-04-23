@@ -1,13 +1,14 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/postal_delivery
+    url: jdbc:postgresql://postdelivery_db:5432/postal_delivery
     username: postgres
-    password: 12345
+    password: 1234
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+    defer-datasource-initialization: true
   sql:
     init:
       mode: always
